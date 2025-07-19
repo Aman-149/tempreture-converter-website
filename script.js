@@ -17,3 +17,14 @@ function convert(){
         temp = Number(textbox.value)
         temp = (temp - 32) * 5/9;
         result.textContent = temp + " °C";
+    }
+        else if (toKelvin.checked) {
+        //result.textContent= "you selected Kelvin";
+        temp = Number(textbox.value);
+        temp = temp + 273.15;
+        result.textContent = temp + " K";
+    }
+    else {
+        result.textContent = "Please select a conversion option.";
+    }
+}
